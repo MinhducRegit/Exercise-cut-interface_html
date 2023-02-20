@@ -1,0 +1,71 @@
+
+
+$white : #FFFFFF;
+$black : #000;
+$D4D4D4 : #D4D4D4;
+$A7A7A7 : #A7A7A7;
+$A770303 : #770303;
+$DEDEDE : #DEDEDE;
+$CCCCCC : #CCCCCC;
+$FFE4E4 : #FFE4E4;
+$color_header : #212121;
+$E211E3B : #211E3B;
+$C40000 : #C40000;
+$E4E4E4 : #E4E4E4;
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin container {
+  max-width: 1311px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+ul {
+  list-style-type:none;
+  margin : 0;
+}
+
+#wraper {
+  width: 100%;
+  
+}
+
+@import 'header';
+
+@import 'banner';
+
+@import 'content';
+
+@import 'footer';
+
+@import 'responsive';
+
+.coating {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+// .navigation_bar ul li:first-child

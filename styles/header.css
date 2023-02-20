@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#wraper {
+  width: 100%;
+}
+
+#header {
+  width: 100%;
+  height: 122px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+  position: fixed;
+}
+
+.container {
+  width: 1311px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  margin-left: 102px;
+}
+
+a.logo {
+  display: block;
+  width: 61px;
+  height: 61px;
+}
+
+a.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .name_company {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  margin-right: 33px;
+}
+
+.container .input {
+  position: relative;
+}
+
+.container .search {
+  width: 374px;
+  height: 45px;
+  left: 286px;
+  top: 38px;
+  background: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  border-radius: 4px;
+  text-indent: 20px;
+}
+
+.container .btn_search {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  color: #A7A7A7;
+}
+
+.container ul.info {
+  margin-left: 371px;
+}
+
+.container ul.info li {
+  display: inline-block;
+}
+
+.container ul.info li:first-child {
+  width: 51px;
+  height: 31px;
+  left: 1031px;
+  top: 48px;
+  line-height: 31px;
+  text-align: center;
+  background: #770303;
+  border-radius: 3px;
+}
+
+.container ul.info li:first-child a {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+.container ul.info li a.create {
+  margin-left: 27px;
+  margin-right: 106px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #212121;
+}
+
+.container ul.info li a.myname {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #212121;
+}
+
+.container ul.info li .user {
+  display: flex;
+  align-items: center;
+}
+
+.container ul.info li .user img {
+  width: 26.67px;
+  height: 26.67px;
+}/*# sourceMappingURL=header.css.map */
