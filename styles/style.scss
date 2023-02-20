@@ -59,6 +59,10 @@ ul {
 
 @import 'responsive';
 
+.open {
+  display: block !important;
+}
+
 .coating {
   position: fixed;
   top: 0;
@@ -66,6 +70,7 @@ ul {
   bottom: 0;
   left: 0;
   display: none;
+  // background-color: #A7A7A7;
 }
 
 // .navigation_bar ul li:first-child
