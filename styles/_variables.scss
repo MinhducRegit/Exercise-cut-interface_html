@@ -1,0 +1,21 @@
+$white : #FFFFFF;
+$black : #000;
+$color_border : #D4D4D4;
+$color_header : #212121;
+
+$color_content : #C40000;
+
+@mixin container {
+  max-width: 1311px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+@mixin navigation_bar {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+

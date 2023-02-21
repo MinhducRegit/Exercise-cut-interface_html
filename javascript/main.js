@@ -1,10 +1,10 @@
 
 
 
-var tab_menu = document.querySelector(".icon_menu");
-var tab_bar = document.querySelector(".info");
-var wraper = document.querySelector("#wraper"); 
-var coating = document.querySelector(".coating");
+let tab_menu = document.querySelector(".icon_menu");
+let tab_bar = document.querySelector(".info");
+let wraper = document.querySelector("#wraper"); 
+let coating = document.querySelector(".coating");
 console.log(wraper);
 function showTabBar () {
   tab_bar.classList.add("open");
@@ -27,11 +27,11 @@ tab_bar.addEventListener("click" , stopPropagation );
 
 // hide header on scroll down show on scroll 
 
-var prevScrollpos = window.pageYOffset;
+let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   tab_bar.classList.remove("open");
   coating.classList.remove("open");
-var currentScrollPos = window.pageYOffset;
+let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector("#header").style.top = "0";
   } else {
