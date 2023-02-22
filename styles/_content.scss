@@ -6,18 +6,15 @@
 .title {
   display: flex;
   justify-content: space-between;
-  margin-top: 72px;
-  margin-bottom: 18px;
+  margin: 72px 0 18px 0;
   height: 72px;
   line-height: 72px;
   align-items: center;
 
 
   .name_title {
-    font-family: 'Noto Sans JP';
-    font-style: normal;
+    font: 50px 'Noto Sans JP',normal;
     font-weight: 700;
-    font-size: 50px;
     color: $black;
     }
   }
@@ -38,14 +35,11 @@
     justify-content: space-between;
 
     li.blog {
-      // margin: 0 15px;
       width: 417px;
-      // height: 552px;
       background: $white;
       border: 1px solid #CCCCCC;
       border-radius: 8px;
-      margin-bottom: 50px;
-      margin-top: 20px;
+      margin: 20px 0 50px 0;
 
       a.category_thumb {
         display: block;
@@ -65,83 +59,76 @@
     }
 
     .content_category {
-      margin-top: 25px;
-      margin-left: 27.45px;
-      margin-right: 10px;
+      margin: 25px 10px 0 27.45px;
     }
 
     li.blog .info {
       display: flex;
       align-items: center;
       margin-left: 0;
-    }
 
-    li.blog .info .name, li.blog .info {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 30px;
-      color: #211E3B;
-    }
-
-    li.blog .info .icon {
-      width: 21px;
-      height: 21px;
-      margin-right: 5.5px;
-      top: 10%;
-      bottom: 53.44%;
-    }
-
-    li.blog .info .name {
-      margin-right: 27.5px;
+      .name,.info {
+        font: 18px/30px ;
+        font-weight: 400;
+        color: #211E3B;
+      }
+  
+      .icon {
+        width: 21px;
+        height: 21px;
+        margin-right: 5.5px;
+        top: 10%;
+        bottom: 53.44%;
+      }
+  
+      .name {
+        margin-right: 27.5px;
+      }
     }
 
     li.blog .content {
       margin-top: 15px;
-    }
 
-    li.blog .content .title_content {
-      font-family: 'SVN-Gilroy';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 28px;
-      color: #211E3B;
+      .title_content {
+        font: 20px/28px 'SVN-Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        color: #211E3B;
+      
+      }
+
+      .describe {
+        margin: 10px 0 30px 0;
+        font-weight: 400;
+        line-height: 25px;
+        color: #211E3B;
+      }
     
-    }
+      .button {
+        position: relative;
+        display: inline-block;
+      }
+    
+      .read_more {
+        width: 137px;
+        height: 40px;
+        left: 122px;
+        top: 1190px;
+        background: $white;
+        border: 1px solid #E4E4E4;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color_content;
+        text-indent: -35px;
+        margin-bottom: 20px;
   
-    li.blog .content .describe {
-      margin-top: 10px;
-      margin-bottom: 30px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 25px;
-      color: #211E3B;
-    }
-  
-    li.blog .content .button {
-      position: relative;
-      display: inline-block;
-    }
-  
-    li.blog .content .read_more {
-      width: 137px;
-      height: 40px;
-      left: 122px;
-      top: 1190px;
-      background: $white;
-      border: 1px solid #E4E4E4;
-      border-radius: 4px;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 20px;
-      color: $color_content;
-      text-indent: -35px;
-      margin-bottom: 20px;
-
-      &:hover {
-        cursor: pointer;
-        background-color: $color_content;
-        color: $white;
+        &:hover {
+          cursor: pointer;
+          background-color: $color_content;
+          color: $white;
+        }
       }
     }
   }
@@ -151,7 +138,7 @@
     height: 8px;
     position: absolute;
     top: 11px;
-      right: 1px;
+    right: 1px;
   }
   
   .navigation_bar {
@@ -169,7 +156,6 @@
       line-height: 36px;
       font-weight: 700;
       font-size: 20px;
-      /* line-height: 28px; */
       color: #211E3B;
 
       &:hover a {

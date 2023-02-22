@@ -1,5 +1,3 @@
-
-
 #header {
   width: 100%;
   height: 122px;
@@ -33,20 +31,16 @@
       display: block;
       width: 61px;
       height: 61px;
-    
-    }
-    
-    a.logo img {
-      width: 100%;
-      height: 100%;
-    }
 
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
     .name_company {
-      font-family: 'Noto Sans JP';
-      font-style: normal;
+      font: 20px/29px 'Noto Sans JP',normal  ;
       font-weight: 700;
-      font-size: 20px;
-      line-height: 29px;
       margin-right: 33px;
     }
     
@@ -77,10 +71,37 @@
     }
     
     ul.info {
-      // margin-left: 371px;
 
       li {
         display: inline-block;
+
+        a.create {
+          margin: 0 106px 0 27px;
+          color: $color_header;
+        }
+        
+        a.myname {
+          color: $color_header;
+        }
+        
+        .user {
+          display: flex;
+          align-items: center;
+        }
+        
+        .user img {
+          width: 26.67px;
+          height: 26.67px;
+          margin-left: 15px;
+          mix-blend-mode: color-burn;
+        }
+
+        a {
+          font: 15px/22px 'Noto Sans JP',normal  ;
+          font-weight: 500;
+          color: $white;
+        
+        }
       }
 
       li:first-child {
@@ -93,42 +114,6 @@
         background: #770303;
         border-radius: 3px;
       
-      }
-      
-      li:first-child a {
-        font-family: 'Noto Sans JP';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        color: $white;
-      
-      }
-      
-      li a.create {
-        margin-left: 27px;
-        margin-right: 106px;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        color: $color_header;
-      }
-      
-      li a.myname {
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        color: $color_header;
-      }
-      
-      li .user {
-        display: flex;
-        align-items: center;
-      }
-      
-      li .user img {
-        width: 26.67px;
-        height: 26.67px;
       }
       
     }

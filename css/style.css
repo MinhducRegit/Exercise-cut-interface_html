@@ -61,11 +61,8 @@ ul {
   height: 100%;
 }
 #header .container .name_company {
-  font-family: "Noto Sans JP";
-  font-style: normal;
+  font: 20px/29px "Noto Sans JP", normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 29px;
   margin-right: 33px;
 }
 #header .container .input {
@@ -94,36 +91,11 @@ ul {
 #header .container ul.info li {
   display: inline-block;
 }
-#header .container ul.info li:first-child {
-  width: 51px;
-  height: 31px;
-  left: 1031px;
-  top: 48px;
-  line-height: 31px;
-  text-align: center;
-  background: #770303;
-  border-radius: 3px;
-}
-#header .container ul.info li:first-child a {
-  font-family: "Noto Sans JP";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  color: #FFFFFF;
-}
 #header .container ul.info li a.create {
-  margin-left: 27px;
-  margin-right: 106px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
+  margin: 0 106px 0 27px;
   color: #212121;
 }
 #header .container ul.info li a.myname {
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
   color: #212121;
 }
 #header .container ul.info li .user {
@@ -133,6 +105,23 @@ ul {
 #header .container ul.info li .user img {
   width: 26.67px;
   height: 26.67px;
+  margin-left: 15px;
+  mix-blend-mode: color-burn;
+}
+#header .container ul.info li a {
+  font: 15px/22px "Noto Sans JP", normal;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+#header .container ul.info li:first-child {
+  width: 51px;
+  height: 31px;
+  left: 1031px;
+  top: 48px;
+  line-height: 31px;
+  text-align: center;
+  background: #770303;
+  border-radius: 3px;
 }
 
 .banner {
@@ -153,17 +142,14 @@ ul {
 #content .title {
   display: flex;
   justify-content: space-between;
-  margin-top: 72px;
-  margin-bottom: 18px;
+  margin: 72px 0 18px 0;
   height: 72px;
   line-height: 72px;
   align-items: center;
 }
 #content .title .name_title {
-  font-family: "Noto Sans JP";
-  font-style: normal;
+  font: 50px "Noto Sans JP", normal;
   font-weight: 700;
-  font-size: 50px;
   color: #000;
 }
 #content .form_control {
@@ -185,8 +171,7 @@ ul {
   background: #FFFFFF;
   border: 1px solid #CCCCCC;
   border-radius: 8px;
-  margin-bottom: 50px;
-  margin-top: 20px;
+  margin: 20px 0 50px 0;
 }
 #content ul.list li.blog a.category_thumb {
   display: block;
@@ -202,19 +187,16 @@ ul {
   cursor: pointer;
 }
 #content ul.list .content_category {
-  margin-top: 25px;
-  margin-left: 27.45px;
-  margin-right: 10px;
+  margin: 25px 10px 0 27.45px;
 }
 #content ul.list li.blog .info {
   display: flex;
   align-items: center;
   margin-left: 0;
 }
-#content ul.list li.blog .info .name, #content ul.list li.blog .info {
+#content ul.list li.blog .info .name, #content ul.list li.blog .info .info {
+  font: 18px/30px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
   color: #211E3B;
 }
 #content ul.list li.blog .info .icon {
@@ -231,17 +213,13 @@ ul {
   margin-top: 15px;
 }
 #content ul.list li.blog .content .title_content {
-  font-family: "SVN-Gilroy";
+  font: 20px/28px "SVN-Gilroy";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
   color: #211E3B;
 }
 #content ul.list li.blog .content .describe {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-style: normal;
+  margin: 10px 0 30px 0;
   font-weight: 400;
   line-height: 25px;
   color: #211E3B;
@@ -289,7 +267,6 @@ ul {
   line-height: 36px;
   font-weight: 700;
   font-size: 20px;
-  /* line-height: 28px; */
   color: #211E3B;
 }
 #content .navigation_bar ul li:hover a {
@@ -385,7 +362,7 @@ ul {
     color: #C40000;
   }
   #header .container ul.info li a.create {
-    margin-left: 0px;
+    margin-left: 0;
   }
   .banner {
     height: 454px;
@@ -413,21 +390,26 @@ ul {
     margin-top: 53px;
   }
 }
-@media screen and (max-width: 930px) and (min-width: 640px) {
+@media screen and (max-width: 950px) and (min-width: 640px) {
   .container {
     justify-content: space-around !important;
   }
-  ul.info li {
+  .container ul.info li {
     display: none !important;
   }
-  ul.info li.myname {
+  .container ul li.myname {
     display: inline-block !important;
   }
-  #content .title {
+  .title {
     justify-content: space-around !important;
   }
   #content ul.list {
     justify-content: space-around !important;
+  }
+}
+@media screen and (max-width: 1270px) and (min-width: 850px) {
+  #content ul.list {
+    justify-content: space-around;
   }
 }
 .open {
