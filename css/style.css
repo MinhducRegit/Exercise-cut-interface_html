@@ -23,6 +23,19 @@ ul {
   width: 100%;
 }
 
+.coating {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.open {
+  display: block !important;
+}
+
 #header {
   width: 100%;
   height: 122px;
@@ -32,7 +45,8 @@ ul {
   transition: 0.4s;
   z-index: 10;
 }
-#header .container {
+
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -40,35 +54,35 @@ ul {
   height: 100%;
   margin: 0 auto;
 }
-#header .container .left {
+.container-left {
   display: flex;
   align-items: center;
 }
-#header .container .icon_menu {
+.container-left-icon-menu {
   display: none;
 }
-#header .container .logo_rt {
+.container-left-logo {
   display: flex;
   align-items: center;
 }
-#header .container a.logo {
+.container-left-logo-logo-rt {
   display: block;
   width: 61px;
   height: 61px;
 }
-#header .container a.logo img {
+.container-left-logo-logo-rt img {
   width: 100%;
   height: 100%;
 }
-#header .container .name_company {
+.container-left-logo-name-company {
   font: 20px/29px "Noto Sans JP", normal;
   font-weight: 700;
   margin-right: 33px;
 }
-#header .container .input {
+.container-left-input {
   position: relative;
 }
-#header .container .search {
+.container-left-input-search {
   width: 374px;
   height: 45px;
   left: 286px;
@@ -79,41 +93,43 @@ ul {
   text-indent: 20px;
   cursor: pointer;
 }
-#header .container .btn_search {
+.container-left-input-btn-search {
   width: 19px;
   height: 19px;
   position: absolute;
-  top: 12px;
-  right: 15px;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
   color: #A7A7A7;
   cursor: pointer;
 }
-#header .container ul.info li {
-  display: inline-block;
-}
-#header .container ul.info li a.create {
-  margin: 0 106px 0 27px;
+.container-info-myname {
   color: #212121;
 }
-#header .container ul.info li a.myname {
-  color: #212121;
-}
-#header .container ul.info li .user {
+.container-info-myname-user {
   display: flex;
   align-items: center;
 }
-#header .container ul.info li .user img {
+.container-info-myname-user img {
   width: 26.67px;
   height: 26.67px;
   margin-left: 15px;
   mix-blend-mode: color-burn;
 }
-#header .container ul.info li a {
+.container-info-create {
+  margin: 0 106px 0 27px;
+  color: #212121 !important;
+}
+.container-info li {
+  display: inline-block;
+}
+.container-info li a {
   font: 15px/22px "Noto Sans JP", normal;
   font-weight: 500;
   color: #FFFFFF;
 }
-#header .container ul.info li:first-child {
+.container-info li:first-child {
   width: 51px;
   height: 31px;
   left: 1031px;
@@ -126,7 +142,6 @@ ul {
 
 .banner {
   overflow: hidden;
-  max-width: 1530px;
   left: 0px;
   top: 0px;
   background: url(/image/layout.jpg) no-repeat center;
@@ -134,25 +149,28 @@ ul {
   block-size: 519px;
 }
 
-#content {
+.content {
+  width: 100%;
+  margin: 72px 0 18px 0;
+}
+.content-container {
   max-width: 1311px;
   height: 100%;
   margin: 0 auto;
 }
-#content .title {
+.content-title {
   display: flex;
   justify-content: space-between;
-  margin: 72px 0 18px 0;
   height: 72px;
   line-height: 72px;
   align-items: center;
 }
-#content .title .name_title {
+.content-title-content-box {
   font: 50px "Noto Sans JP", normal;
   font-weight: 700;
   color: #000;
 }
-#content .form_control {
+.content-title-form-select {
   width: 144px;
   height: 40px;
   background: #FFFFFF;
@@ -161,74 +179,76 @@ ul {
   font-size: 15px;
   line-height: 22px;
 }
-#content ul.list {
+.content-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 18px;
 }
-#content ul.list li.blog {
+.content-blog {
   width: 417px;
   background: #FFFFFF;
   border: 1px solid #CCCCCC;
   border-radius: 8px;
   margin: 20px 0 50px 0;
 }
-#content ul.list li.blog a.category_thumb {
+.content-category_thumb {
   display: block;
   width: 100%;
   height: 276px;
 }
-#content ul.list li.blog img {
+.content-category_thumb img {
   max-width: 100%;
   height: 100%;
 }
-#content ul.list li.blog img:hover {
+.content-category_thumb img:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-#content ul.list .content_category {
+.content-content_category {
   margin: 25px 10px 0 27.45px;
 }
-#content ul.list li.blog .info {
+.content-info {
   display: flex;
   align-items: center;
   margin-left: 0;
 }
-#content ul.list li.blog .info .name, #content ul.list li.blog .info .info {
+.content-info-name, .content-info-time {
   font: 18px/30px;
   font-weight: 400;
   color: #211E3B;
 }
-#content ul.list li.blog .info .icon {
+.content-info-icon {
   width: 21px;
   height: 21px;
   margin-right: 5.5px;
   top: 10%;
   bottom: 53.44%;
 }
-#content ul.list li.blog .info .name {
+.content-info-name {
   margin-right: 27.5px;
 }
-#content ul.list li.blog .content {
+.content-info-content {
   margin-top: 15px;
 }
-#content ul.list li.blog .content .title_content {
+.content-info-title-content {
   font: 20px/28px "SVN-Gilroy";
   font-style: normal;
   font-weight: 700;
   color: #211E3B;
 }
-#content ul.list li.blog .content .describe {
+.content-info-describe {
   margin: 10px 0 30px 0;
   font-weight: 400;
   line-height: 25px;
   color: #211E3B;
 }
-#content ul.list li.blog .content .button {
+.content-info-button {
   position: relative;
   display: inline-block;
+  margin-bottom: 20px;
 }
-#content ul.list li.blog .content .read_more {
+.content-info-read-more {
   width: 137px;
   height: 40px;
   left: 122px;
@@ -241,25 +261,30 @@ ul {
   line-height: 20px;
   color: #C40000;
   text-indent: -35px;
-  margin-bottom: 20px;
 }
-#content ul.list li.blog .content .read_more:hover {
+.content-info-read-more:hover {
   cursor: pointer;
   background-color: #C40000;
   color: #FFFFFF;
 }
-#content .icon_arrow {
+.content-info-icon-arrow {
   width: 18px;
   height: 8px;
   position: absolute;
-  top: 11px;
-  right: 1px;
+  right: -3%;
+  top: 39%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
 }
-#content .navigation_bar {
+.content-navigation-bar {
   display: flex;
   justify-content: center;
 }
-#content .navigation_bar ul li {
+.content-navigation-bar-three {
+  background-color: #FFE4E4;
+  color: #C40000;
+}
+.content-navigation-bar li {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -269,25 +294,21 @@ ul {
   font-size: 20px;
   color: #211E3B;
 }
-#content .navigation_bar ul li:hover a {
+.content-navigation-bar li:hover a {
   background-color: #FFE4E4;
   color: #C40000;
 }
-#content .navigation_bar ul li a {
+.content-navigation-bar li a {
   display: block;
   border-radius: 50%;
   width: 100%;
   height: 100%;
 }
-#content .navigation_bar ul li a.three {
-  background-color: #FFE4E4;
-  color: #C40000;
-}
-#content .navigation_bar ul li:first-child a {
+.content-navigation-bar li:first-child a {
   background-color: #C40000;
   color: #FFFFFF;
 }
-#content .navigation_bar ul li:last-child a {
+.content-navigation-bar li:last-child a {
   color: #FFFFFF;
   background: #E5E5E5;
   transform: rotate(-180deg);
@@ -311,79 +332,93 @@ ul {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
   }
-  #header .container {
+  .container {
     max-width: 495px;
     margin: 0 auto;
     display: block;
   }
-  #header .container .left {
+  .container-left {
     width: 100%;
     justify-content: space-between;
-    margin: 12px 0px;
+    height: 100%;
   }
-  #header .container .icon_menu {
+  .container-left-icon-menu {
     display: block !important;
     width: 26.25px;
     cursor: pointer;
     z-index: 1000;
   }
-  #header .container a.logo {
-    display: block;
-    width: 47px;
-    height: 45px;
+  .container-left-logo {
+    display: flex;
+    align-items: center;
   }
-  #header .container .input {
+  .container-left-logo-logo-rt {
+    display: block;
+    width: 61px;
+    height: 61px;
+  }
+  .container-left-name-company {
+    font: 20px/29px "Noto Sans JP", normal;
+    font-weight: 700;
+    margin-right: 33px;
+  }
+  .container-left-input {
     position: unset;
   }
-  #header .container .btn_search {
-    top: -9px;
+  .container-left-input-btn-search {
     position: absolute;
   }
-  #header .container .search {
+  .container-left-input-search {
     display: none;
   }
-  #header .container ul.info {
+  .container-info {
     display: none;
     background-color: #D4D4D4;
   }
-  #header .container ul.info li {
+  .container-info li {
     width: 100%;
     display: block;
-    margin: 10px 0px;
+    margin: 10px 0;
   }
-  #header .container ul.info li:hover {
+  .container-info li:hover {
     background-color: #A7A7A7;
     cursor: pointer;
   }
-  #header .container ul.info li:first-child {
+  .container-info li:first-child {
     width: 100%;
+    margin: 0 0 10px 0;
   }
-  #header .container ul.info li:hover a {
+  .container-info li:last-child {
+    width: 100%;
+    padding: 0 0 10px 0;
+  }
+  .container-info li:hover a {
     color: #C40000;
   }
-  #header .container ul.info li a.create {
+  .container-info-create {
     margin-left: 0;
   }
   .banner {
     height: 454px;
     background: url(/image/banner_responsive.png) no-repeat center;
-    background-size: 100%;
+    background-size: cover;
     block-size: 454px;
   }
-  #content {
+  .content {
     width: 100%;
   }
-  #content .title {
+  .content-title {
     max-width: 417px;
     margin: 0 auto;
+    height: auto;
   }
-  #content .name_title {
-    font-size: 30px;
+  .content-title-content-box {
+    font-size: 30px !important;
   }
-  #content ul.list {
+  .content-list {
     justify-content: center;
   }
-  .navigation_bar ul li {
+  .navigation-bar ul li {
     margin-top: 17px;
   }
   #footer {
@@ -394,35 +429,23 @@ ul {
   .container {
     justify-content: space-around !important;
   }
-  .container ul.info li {
-    display: none !important;
+  .container-info li {
+    display: none;
   }
-  .container ul li.myname {
+  .container-info-myname {
     display: inline-block !important;
   }
-  .title {
+  .content-title {
     justify-content: space-around !important;
   }
-  #content ul.list {
+  .content-list {
     justify-content: space-around !important;
   }
 }
 @media screen and (max-width: 1270px) and (min-width: 850px) {
-  #content ul.list {
-    justify-content: space-around;
+  .content-list {
+    justify-content: space-around !important;
   }
-}
-.open {
-  display: block !important;
-}
-
-.coating {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

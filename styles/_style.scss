@@ -1,34 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap'); 
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  margin: 0;
-}
-
-ul {
-  list-style-type:none;
-  margin : 0;
-}
-
-#wraper {
-  width: 100%;
-  
-}
 
 @import 'variables';
+
+@import 'default';
 
 @import 'header';
 
@@ -39,22 +15,3 @@ ul {
 @import 'footer';
 
 @import 'responsive';
-
-.open {
-  display: block !important;
-}
-
-.coating {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  // background-color: #A7A7A7;
-}
-
-
-
-// .navigation_bar ul li:first-child
-

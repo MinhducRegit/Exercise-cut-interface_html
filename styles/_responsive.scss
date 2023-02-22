@@ -6,101 +6,118 @@
     height: 69px;
     background-color: $white;
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+  }
+  .container {
+    max-width: 495px;
+    margin: 0 auto;
+    display: block;
 
-    .container {
-      max-width: 495px;
-      margin: 0 auto;
-      display: block;
-
-      .left {
+      &-left {
         width: 100%;
         justify-content: space-between;
-        margin: 12px 0px;
+        // margin: 12px 0px;
+        height: 100%;
+
+        &-icon-menu {
+          display: block !important;
+          width: 26.25px;
+          cursor: pointer;
+          z-index: 1000;
+        }
+        &-logo {
+          display: flex;
+          align-items: center;
+  
+            &-logo-rt {
+            display: block;
+            width: 61px;
+            height: 61px;
+            }
+        }
+  
+        &-name-company {
+          font: 20px/29px 'Noto Sans JP',normal  ;
+          font-weight: 700;
+          margin-right: 33px;
+        }
+
+        &-input {
+          position:unset;
+
+          &-btn-search  {
+            position: absolute;
+          }
+        
+          &-search {
+            display: none;
+          }
+        }
       }
-    
-      .icon_menu {
-        display: block !important;
-        width: 26.25px;
-        cursor: pointer;
-        z-index: 1000;
-      }
-    
-      a.logo {
-        display: block;
-        width: 47px;
-        height: 45px;
-      
-      }
-    
-      .input {
-        position:unset;
-      }
-    
-      .btn_search  {
-        top: -9px;
-        position: absolute;
-      }
-    
-      .search {
-        display: none;
-      }
-    
-      ul.info {
-        // display: none;
+
+      &-info {
         display: none;
         background-color: $color_border;
-
-        li {
+  
+        & li {
           width: 100%;
           display: block;
-          margin: 10px 0px;
-    
+          margin: 10px 0;
+      
           &:hover{
             background-color: #A7A7A7;
             cursor: pointer;
           }
-    
+      
           &:first-child {
             width: 100%;
+            margin:0 0 10px 0;
           }
-    
+
+          &:last-child {
+            width: 100%;
+            padding:0 0 10px 0;
+          }
+      
           &:hover a {
             color: $color_content;
           }
-    
-          a.create {
-            margin-left: 0;
-          }
+        }
+  
+        &-create {
+          margin-left: 0;
         }
       }
-    }
-  }
+        
+  } 
 
   .banner {
     height: 454px;
     background: url(/image/banner_responsive.png) no-repeat center;
-    background-size: 100%;
+    background-size: cover;
     block-size: 454px;
   }
 
-  #content {
+  .content {
     width: 100%;
 
-    .title {
+    &-title {
       max-width: 417px;
       margin: 0 auto;
+      height: auto;
+
+      &-content-box {
+        font-size: 30px !important;
+      }
     }
   
-    .name_title {
-      font-size: 30px;
-    }
+    
   
-    ul.list {
+    &-list {
       justify-content: center;
     }
   }
 
-  .navigation_bar ul li{
+  .navigation-bar ul li{
     margin-top: 17px;
   }
 
@@ -115,29 +132,34 @@
   .container {
     justify-content: space-around !important;
 
-    ul.info li {
-      display: none !important;
-    } 
+    &-info { 
 
-    ul li.myname {
-      display: inline-block !important;
+      & li {
+        display: none ;
+      } 
+
     }
   }
-  
-   .title {
-    justify-content: space-around !important;
+  .container-info-myname {
+    display: inline-block !important;
   }
 
-  #content ul.list {
-    justify-content: space-around !important;
+  .content {
+
+    &-title {
+      // width: ;
+      justify-content: space-around !important;
+    }
   }
+  .content-list {
+      justify-content: space-around !important;
+  }
+   
 }
 
 
 @media screen and (max-width: 1270px) and (min-width: 850px) {
-  #content ul.list {
-    justify-content: space-around;
+  .content-list {
+    justify-content: space-around !important;
   }
 }
-
-

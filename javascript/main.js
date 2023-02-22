@@ -1,8 +1,8 @@
 
 
 
-let tabMenu = document.querySelector(".icon_menu");
-let tabBar = document.querySelector(".info");
+let tabMenu = document.querySelector(".container-left-icon-menu");
+let tabBar = document.querySelector(".container-info");
 let wraper = document.querySelector("#wraper"); 
 let coating = document.querySelector(".coating");
 function showTabBar () {
