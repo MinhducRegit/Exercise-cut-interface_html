@@ -57,6 +57,7 @@ ul {
   max-width: 1311px;
   height: 100%;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .container-left {
   display: flex;
@@ -118,9 +119,9 @@ ul {
   display: flex;
   align-items: center;
 }
-.container-info-myname-user img {
-  width: 26.67px;
-  height: 26.67px;
+.container-info-myname-user-icon-user {
+  width: 30.67px;
+  height: 30.67px;
   margin-left: 15px;
   mix-blend-mode: color-burn;
 }
@@ -135,6 +136,8 @@ ul {
   font: 15px/22px "Noto Sans JP", normal;
   font-weight: 500;
   color: #FFFFFF;
+  display: block;
+  line-height: 27px;
 }
 .container-info li:first-child {
   width: 51px;
@@ -168,23 +171,34 @@ ul {
 .content-title {
   display: flex;
   justify-content: space-between;
-  height: 72px;
   line-height: 72px;
   align-items: center;
+  padding: 15px;
 }
 .content-title-content-box {
   font: 50px "Noto Sans JP", normal;
   font-weight: 700;
   color: #000;
+  height: 100%;
+  line-height: 63px;
 }
-.content-title-form-select {
+.content-title-select {
   width: 144px;
   height: 40px;
   background: #FFFFFF;
   border: 1px solid #DEDEDE;
   border-radius: 4px;
-  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+.content-title-form-select {
+  border: none !important;
+  outline: none;
+  width: 100%;
+  margin: 0 13px;
+  font-size: 17px;
   line-height: 22px;
+  font-weight: 500;
 }
 .content-list {
   display: flex;
@@ -256,8 +270,7 @@ ul {
   margin-bottom: 20px;
 }
 .content-info-read-more {
-  width: 137px;
-  height: 40px;
+  padding: 10px 46px 10px 15px;
   left: 122px;
   top: 1190px;
   background: #FFFFFF;
@@ -267,7 +280,6 @@ ul {
   font-size: 14px;
   line-height: 20px;
   color: #C40000;
-  text-indent: -35px;
 }
 .content-info-read-more:hover {
   cursor: pointer;
@@ -275,16 +287,18 @@ ul {
   color: #FFFFFF;
 }
 .content-info-icon-arrow {
-  width: 18px;
+  width: 20px;
   height: 8px;
+  border: -2px solid;
   position: absolute;
-  right: -3%;
-  top: 39%;
+  right: 5%;
+  top: 36%;
   bottom: 50%;
   transform: translate(-50%, -50%);
 }
 .content-navigation-bar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .content-navigation-bar-three {
@@ -306,10 +320,16 @@ ul {
   color: #C40000;
 }
 .content-navigation-bar li a {
+  font-family: "SVN-Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 37px;
   display: block;
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  color: #211E3B;
 }
 .content-navigation-bar li:first-child a {
   background-color: #C40000;
@@ -332,9 +352,9 @@ ul {
   margin-top: 100px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 546px) {
   #header {
-    max-width: 640px;
+    max-width: 546px;
     height: 69px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
@@ -347,6 +367,7 @@ ul {
   .container-left {
     width: 100%;
     justify-content: space-between;
+    padding: 0px 10px;
     height: 100%;
   }
   .container-left-icon-menu {
@@ -419,6 +440,9 @@ ul {
   .content {
     width: 100%;
   }
+  .content-container {
+    padding: 0 15px;
+  }
   .content-title {
     max-width: 417px;
     margin: 0 auto;
@@ -426,6 +450,9 @@ ul {
   }
   .content-title-content-box {
     font-size: 30px !important;
+  }
+  .content-category_thumb {
+    height: auto !important;
   }
   .content-list {
     justify-content: center;
@@ -437,7 +464,7 @@ ul {
     margin-top: 53px;
   }
 }
-@media screen and (max-width: 970px) and (min-width: 640px) {
+@media screen and (max-width: 980px) and (min-width: 546px) {
   .container {
     justify-content: space-around !important;
   }
@@ -454,7 +481,7 @@ ul {
     justify-content: space-around !important;
   }
 }
-@media screen and (max-width: 1270px) and (min-width: 970px) {
+@media screen and (max-width: 1270px) and (min-width: 980px) {
   .container {
     margin: 0 16px;
   }

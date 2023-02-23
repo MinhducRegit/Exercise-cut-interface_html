@@ -1,8 +1,8 @@
 
 
-@media (max-width: 640px) {
+@media (max-width: 546px) {
   #header {
-    max-width: 640px;
+    max-width: 546px;
     height: 69px;
     background-color: $white;
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
@@ -15,7 +15,7 @@
       &-left {
         width: 100%;
         justify-content: space-between;
-        // margin: 12px 0px;
+        padding: 0px 10px;
         height: 100%;
 
         &-icon-menu {
@@ -106,6 +106,10 @@
   .content {
     width: 100%;
 
+    &-container {
+      padding: 0 15px;
+    }
+
     &-title {
       max-width: 417px;
       margin: 0 auto;
@@ -114,9 +118,13 @@
       &-content-box {
         font-size: 30px !important;
       }
+
     }
+
+    &-category_thumb {
+      height: auto !important;
   
-    
+    }
   
     &-list {
       justify-content: center;
@@ -134,7 +142,7 @@
   
 }
 
-@media screen and (max-width: 970px) and (min-width: 640px) {
+@media screen and (max-width: 980px) and (min-width: 546px) {
   .container {
     justify-content: space-around !important;
 
@@ -164,7 +172,7 @@
 }
 
 
-@media screen and (max-width: 1270px) and (min-width: 970px) {
+@media screen and (max-width: 1270px) and (min-width: 980px) {
   .container {
     margin: 0 16px;
   }

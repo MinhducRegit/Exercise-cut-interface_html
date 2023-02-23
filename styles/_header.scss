@@ -35,6 +35,7 @@
     align-items: center;
     justify-content: space-between;
     @include container;
+    padding:0 10px;
 
     &-left {
       display: flex;
@@ -108,9 +109,9 @@
           display: flex;
           align-items: center;
 
-          & img {
-            width: 26.67px;
-            height: 26.67px;
+          &-icon-user {
+            width: 30.67px;
+            height: 30.67px;
             margin-left: 15px;
             mix-blend-mode: color-burn;
           }
@@ -128,7 +129,9 @@
         & a {
             font: 15px/22px 'Noto Sans JP',normal  ;
             font-weight: 500;
-            color: $white;   
+            color: $white; 
+            display: block;
+            line-height: 27px;  
         } 
 
         &:first-child {

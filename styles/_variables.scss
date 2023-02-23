@@ -11,8 +11,14 @@ $color_content : #C40000;
 }
 
 @mixin navigation_bar {
+  font-family: 'SVN-Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 37px;
   display: block;
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  color: #211E3B;
 }
