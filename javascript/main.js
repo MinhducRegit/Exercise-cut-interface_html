@@ -1,35 +1,44 @@
 
 
 
-let tabMenu = document.querySelector(".container-left-icon-menu");
-let tabBar = document.querySelector(".container-info");
-let wraper = document.querySelector("#wraper"); 
+let tabIconMenu = document.querySelector(".container-left-icon-menu");
+let tabIconClose = document.querySelector(".container-left-icon-close");
+let tabMenu = document.querySelector(".container-info");
 let coating = document.querySelector(".coating");
-function showTabBar () {
-  tabBar.classList.add("open");
+
+console.log(document.querySelector("#header"));
+function showTabMenu () {
+  tabMenu.classList.add("open");
   coating.classList.add("open");
+  tabIconMenu.classList.add("hide");
+  tabIconClose.classList.add("open");
 
 }
 function stopPropagation(event) {
   event.stopPropagation()
 }
-function hideTabBar () {
-  tabBar.classList.remove("open");
+function hideTabMenu () {
+  tabMenu.classList.remove("open");
   coating.classList.remove("open");
+  tabIconMenu.classList.remove("hide");
+  tabIconClose.classList.remove("open");
 }
 
-tabMenu.addEventListener("click", showTabBar);
+tabIconMenu.addEventListener("click", showTabMenu);
 
-coating.addEventListener("click", hideTabBar);
+tabIconClose.addEventListener("click", hideTabMenu);
+coating.addEventListener("click", hideTabMenu);
 
-tabBar.addEventListener("click" , stopPropagation );
+tabMenu.addEventListener("click" , stopPropagation );
 
 // hide header on scroll down show on scroll 
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-  tabBar.classList.remove("open");
+  tabMenu.classList.remove("open");
   coating.classList.remove("open");
+  tabIconMenu.classList.remove("hide");
+  tabIconClose.classList.remove("open");
 let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.querySelector("#header").style.top = "0";

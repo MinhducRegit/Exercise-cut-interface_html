@@ -10,11 +10,14 @@
   bottom: 0;
   left: 0;
   display: none;
-  // background-color: #A7A7A7;
 }
 
 .open {
   display: block !important;
+}
+
+.hide {
+  display: none !important;
 }
 
 #header {
@@ -38,6 +41,10 @@
       align-items: center;
 
       &-icon-menu {
+        display: none;
+      }
+
+      &-icon-close {
         display: none;
       }
 
@@ -140,60 +147,3 @@
     }
   }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    // ul.info {
-
-    //   // li {
-    //   //   display: inline-block;
-
-    //   //   a.create {
-    //   //     margin: 0 106px 0 27px;
-    //   //     color: $color_header;
-    //   //   }
-        
-    //   //   a.myname {
-    //   //     color: $color_header;
-    //   //   }
-        
-    //     // .user {
-    //     //   display: flex;
-    //     //   align-items: center;
-    //     // }
-        
-    //     // .user img {
-    //     //   width: 26.67px;
-    //     //   height: 26.67px;
-    //     //   margin-left: 15px;
-    //     //   mix-blend-mode: color-burn;
-    //     // }
-
-    //     a {
-    //       font: 15px/22px 'Noto Sans JP',normal  ;
-    //       font-weight: 500;
-    //       color: $white;
-        
-    //     }
-    //   }
-
-      // li:first-child {
-      //   width: 51px;
-      //   height: 31px;
-      //   left: 1031px;
-      //   top: 48px;
-      //   line-height: 31px;
-      //   text-align: center;
-      //   background: #770303;
-      //   border-radius: 3px;
-      
-      // }
-      
-//     }
-//   }
-// }
