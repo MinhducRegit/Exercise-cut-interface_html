@@ -4,6 +4,29 @@ $color_border : #D4D4D4;
 $color_header : #212121;
 $color_content : #C40000;
 
+@font-face {
+  font-family: "SVN-Gilroy Bold";
+  src: url("./../fonts/SVN-Gilroy\ Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Gilroy Regular ";
+  src: url("./../fonts/SVN-Gilroy\ SemiBold.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("./../fonts/SVN-Gilroy\ Light.otf");
+  font-style: normal;
+  font-display: swap;
+}
+
 @mixin container {
   max-width: 1311px;
   height: 100%;
@@ -11,7 +34,7 @@ $color_content : #C40000;
 }
 
 @mixin navigation_bar {
-  font-family: 'SVN-Gilroy';
+  font-family: 'SVN-Gilroy Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;

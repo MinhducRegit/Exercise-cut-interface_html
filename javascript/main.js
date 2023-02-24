@@ -6,7 +6,6 @@ let tabIconClose = document.querySelector(".container-left-icon-close");
 let tabMenu = document.querySelector(".container-info");
 let coating = document.querySelector(".coating");
 
-console.log(document.querySelector("#header"));
 function showTabMenu () {
   tabMenu.classList.add("open");
   coating.classList.add("open");

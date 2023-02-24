@@ -1,6 +1,6 @@
 
 
-@media (max-width: 546px) {
+@media (max-width: 547px) {
   #header {
     max-width: 546px;
     height: 69px;
@@ -8,14 +8,14 @@
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
   }
   .container {
-    max-width: 495px;
+    max-width: 497px;
     margin: 0 auto;
     display: block;
+    padding: 0 10px;
 
       &-left {
         width: 100%;
         justify-content: space-between;
-        padding: 0px 10px;
         height: 100%;
 
         &-icon-menu {
@@ -67,7 +67,7 @@
         & li {
           width: 100%;
           display: block;
-          margin: 10px 0;
+          margin: 15px 0;
       
           &:hover{
             background-color: #A7A7A7;
@@ -107,7 +107,7 @@
     width: 100%;
 
     &-container {
-      padding: 0 15px;
+      padding: 0 20px;
     }
 
     &-title {
@@ -142,7 +142,7 @@
   
 }
 
-@media screen and (max-width: 980px) and (min-width: 546px) {
+@media screen and (max-width: 980px) and (min-width: 547px) {
   .container {
     justify-content: space-around !important;
 

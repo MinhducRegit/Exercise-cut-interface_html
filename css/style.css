@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@font-face {
+  font-family: "SVN-Gilroy Bold";
+  src: url("./../fonts/SVN-Gilroy Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy Regular ";
+  src: url("./../fonts/SVN-Gilroy SemiBold.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("./../fonts/SVN-Gilroy Light.otf");
+  font-style: normal;
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -57,7 +77,7 @@ ul {
   max-width: 1311px;
   height: 100%;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 .container-left {
   display: flex;
@@ -175,7 +195,7 @@ ul {
   justify-content: space-between;
   line-height: 72px;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0;
 }
 .content-title-content-box {
   font: 50px "Noto Sans JP", normal;
@@ -232,12 +252,14 @@ ul {
   margin: 25px 10px 0 27.45px;
 }
 .content-info {
+  font-family: "SVN-Gilroy";
   display: flex;
   align-items: center;
   margin-left: 0;
 }
 .content-info-name, .content-info-time {
-  font: 18px/30px;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 400;
   color: #211E3B;
 }
@@ -245,8 +267,7 @@ ul {
   width: 21px;
   height: 21px;
   margin-right: 5.5px;
-  top: 10%;
-  bottom: 53.44%;
+  color: #858383;
 }
 .content-info-name {
   margin-right: 27.5px;
@@ -255,12 +276,13 @@ ul {
   margin-top: 15px;
 }
 .content-info-title-content {
-  font: 20px/28px "SVN-Gilroy";
+  font: 20px/28px "SVN-Gilroy Bold";
   font-style: normal;
   font-weight: 700;
   color: #211E3B;
 }
 .content-info-describe {
+  font-family: "SVN-Gilroy";
   margin: 10px 0 30px 0;
   font-weight: 400;
   line-height: 25px;
@@ -328,7 +350,7 @@ ul {
   color: #C40000 !important;
 }
 .content-navigation-bar li a {
-  font-family: "SVN-Gilroy";
+  font-family: "SVN-Gilroy Bold";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -380,7 +402,7 @@ ul {
   margin-top: 100px;
 }
 
-@media (max-width: 546px) {
+@media (max-width: 547px) {
   #header {
     max-width: 546px;
     height: 69px;
@@ -388,14 +410,14 @@ ul {
     box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
   }
   .container {
-    max-width: 495px;
+    max-width: 497px;
     margin: 0 auto;
     display: block;
+    padding: 0 10px;
   }
   .container-left {
     width: 100%;
     justify-content: space-between;
-    padding: 0px 10px;
     height: 100%;
   }
   .container-left-icon-menu {
@@ -439,7 +461,7 @@ ul {
   .container-info li {
     width: 100%;
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
   }
   .container-info li:hover {
     background-color: #A7A7A7;
@@ -469,7 +491,7 @@ ul {
     width: 100%;
   }
   .content-container {
-    padding: 0 15px;
+    padding: 0 20px;
   }
   .content-title {
     max-width: 417px;
@@ -492,7 +514,7 @@ ul {
     margin-top: 53px;
   }
 }
-@media screen and (max-width: 980px) and (min-width: 546px) {
+@media screen and (max-width: 980px) and (min-width: 547px) {
   .container {
     justify-content: space-around !important;
   }

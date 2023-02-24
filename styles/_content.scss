@@ -11,7 +11,7 @@
   justify-content: space-between;
   line-height: 72px;
   align-items: center;
-  padding: 15px;
+  padding: 15px 0;
 
     &-content-box{
       font: 50px 'Noto Sans JP',normal;
@@ -79,12 +79,14 @@
     }
 
   &-info {
+    font-family:'SVN-Gilroy' ;
       display: flex;
       align-items: center;
       margin-left: 0;
 
       &-name,&-time {
-        font: 18px/30px ;
+        font-size: 18px;
+        line-height: 30px;
         font-weight: 400;
         color: #211E3B;
       }
@@ -93,8 +95,7 @@
         width: 21px;
         height: 21px;
         margin-right: 5.5px;
-        top: 10%;
-        bottom: 53.44%;
+        color: #858383;
       }
   
       &-name {
@@ -106,13 +107,14 @@
       }
   
       &-title-content {
-          font: 20px/28px 'SVN-Gilroy';
+          font: 20px/28px 'SVN-Gilroy Bold';
           font-style: normal;
           font-weight: 700;
           color: #211E3B;
       }
   
       &-describe {
+        font-family: 'SVN-Gilroy';
           margin: 10px 0 30px 0;
           font-weight: 400;
           line-height: 25px;
