@@ -159,42 +159,71 @@
   &-navigation-bar {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    gap: 5px;
 
     &-three {
       background-color: #FFE4E4;
       color: $color_content;
     }
+
+    & li:first-child, & li:last-child {
+      width: 40px;
+      height: 40px;
+    }
     
       & li {
         display: inline-block;
-        width: 40px;
-        height: 40px;
+        width: 32px;
+        height: 32px;
         text-align: center;
-        line-height: 36px;
         font-weight: 700;
         font-size: 20px;
         color: #211E3B;
+        position: relative;
   
         &:hover a {
-          background-color: #FFE4E4;
-          color: $color_content;
+          background-color: #FFE4E4 !important;
+          color: $color_content !important;
         }
 
         & a{
           @include navigation-bar();
+          display: flex;
+          align-items: center;
+          justify-content: center;
         
         }
     
         &:first-child a {
           background-color: $color_content;
           color: $white;
+
+          & div {
+            width: 20px;
+            height: 100%;
+            position: absolute;
+            top: 52%;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+          }
         }
     
         &:last-child a {
           color: $white;
           background: #E5E5E5;
-          transform: rotate(-180deg);
+          
+          & div {
+            width: 20px;
+            height: 100%;
+            position: absolute;
+            top: 52%;
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+          }
         }
       } 
      
