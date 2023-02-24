@@ -474,9 +474,10 @@ ul {
     margin-left: 0;
   }
   .banner {
+    height: 100vw;
     background: url("./../image/banner_responsive.png") no-repeat center;
     background-size: contain;
-    block-size: 454px;
+    background-position-y: unset;
   }
   .content {
     width: 100%;
