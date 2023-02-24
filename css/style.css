@@ -112,6 +112,10 @@ ul {
   color: #A7A7A7;
   cursor: pointer;
 }
+.container-info {
+  display: flex;
+  align-items: center;
+}
 .container-info-myname {
   color: #212121;
 }

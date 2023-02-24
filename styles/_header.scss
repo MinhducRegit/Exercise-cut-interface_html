@@ -101,6 +101,8 @@
     }
 
     &-info {
+      display: flex;
+      align-items: center;
 
       &-myname {
         color: $color_header;
