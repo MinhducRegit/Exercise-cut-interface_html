@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@font-face {
+  font-family: "SVN-Gilroy Bold";
+  src: url("./../fonts/SVN-Gilroy Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy Regular ";
+  src: url("./../fonts/SVN-Gilroy SemiBold.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  src: url("./../fonts/SVN-Gilroy Light.otf");
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#wraper {
+  width: 100%;
+}
+
+.coating {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.open {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+#header {
+  width: 100%;
+  height: 122px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  transition: 0.4s;
+  z-index: 10;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1311px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-left {
+  display: flex;
+  align-items: center;
+}
+.container-left-icon-menu {
+  display: none;
+}
+.container-left-icon-close {
+  display: none;
+}
+.container-left-logo {
+  display: flex;
+  align-items: center;
+}
+.container-left-logo-logo-rt {
+  display: block;
+  width: 61px;
+  height: 61px;
+}
+.container-left-logo-logo-rt img {
+  width: 100%;
+  height: 100%;
+}
+.container-left-logo-name-company {
+  font: 20px/29px "Noto Sans JP", normal;
+  font-weight: 700;
+  margin-right: 33px;
+}
+.container-left-input {
+  position: relative;
+}
+.container-left-input-search {
+  width: 374px;
+  height: 45px;
+  left: 286px;
+  top: 38px;
+  background: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  border-radius: 4px;
+  text-indent: 20px;
+  cursor: pointer;
+}
+.container-left-input-btn-search {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  color: #A7A7A7;
+  cursor: pointer;
+}
+.container-info {
+  display: flex;
+  align-items: center;
+}
+.container-info-myname {
+  color: #212121;
+}
+.container-info-myname-user {
+  display: flex;
+  align-items: center;
+}
+.container-info-myname-user-icon-user {
+  width: 30.67px;
+  height: 30.67px;
+  margin-left: 15px;
+  mix-blend-mode: color-burn;
+}
+.container-info-create {
+  margin: 0 106px 0 27px;
+  color: #212121 !important;
+}
+.container-info li {
+  display: inline-block;
+}
+.container-info li a {
+  font: 15px/22px "Noto Sans JP", normal;
+  font-weight: 500;
+  color: #FFFFFF;
+  display: block;
+  line-height: 27px;
+}
+.container-info li:first-child {
+  width: 51px;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
+  background: #770303;
+  border-radius: 3px;
+}
+
+.banner {
+  overflow: hidden;
+  left: 0px;
+  top: 0px;
+  background: url("./../image/layout.jpg") no-repeat center;
+  background-size: 1530px;
+  block-size: 519px;
+}
+
+.content {
+  width: 100%;
+  margin: 72px 0 18px 0;
+}
+.content-container {
+  max-width: 1311px;
+  height: 100%;
+  margin: 0 auto;
+}
+.content-title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 72px;
+  align-items: center;
+  padding: 15px 0;
+}
+.content-title-content-box {
+  font: 50px "Noto Sans JP", normal;
+  font-weight: 700;
+  color: #000;
+  height: 100%;
+  line-height: 63px;
+}
+.content-title-select {
+  width: 144px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+}
+.content-title-form-select {
+  border: none !important;
+  outline: none;
+  width: 100%;
+  margin: 0 13px;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+.content-blog {
+  width: 417px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  margin: 20px 0 50px 0;
+}
+.content-category_thumb {
+  display: block;
+  width: 100%;
+  height: 276px;
+}
+.content-category_thumb img {
+  max-width: 100%;
+  height: 100%;
+}
+.content-category_thumb img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.content-content_category {
+  margin: 25px 10px 0 27.45px;
+}
+.content-info {
+  font-family: "SVN-Gilroy";
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+.content-info-name, .content-info-time {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #211E3B;
+}
+.content-info-icon {
+  width: 21px;
+  height: 21px;
+  margin-right: 5.5px;
+  color: #858383;
+}
+.content-info-name {
+  margin-right: 27.5px;
+}
+.content-info-content {
+  margin-top: 15px;
+}
+.content-info-title-content {
+  font: 20px/28px "SVN-Gilroy Bold";
+  font-style: normal;
+  font-weight: 700;
+  color: #211E3B;
+}
+.content-info-describe {
+  font-family: "SVN-Gilroy";
+  margin: 10px 0 30px 0;
+  font-weight: 400;
+  line-height: 25px;
+  color: #211E3B;
+}
+.content-info-button {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.content-info-read-more {
+  padding: 10px 46px 10px 15px;
+  left: 122px;
+  top: 1190px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #C40000;
+}
+.content-info-read-more:hover {
+  cursor: pointer;
+  background-color: #C40000;
+  color: #FFFFFF;
+}
+.content-info-icon-arrow {
+  width: 20px;
+  height: 8px;
+  border: -2px solid;
+  position: absolute;
+  right: 5%;
+  top: 36%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+}
+.content-navigation-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.content-navigation-bar-three {
+  background-color: #FFE4E4;
+  color: #C40000;
+}
+.content-navigation-bar li:first-child, .content-navigation-bar li:last-child {
+  width: 40px;
+  height: 40px;
+}
+.content-navigation-bar li {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #211E3B;
+  position: relative;
+}
+.content-navigation-bar li:hover a {
+  background-color: #FFE4E4 !important;
+  color: #C40000 !important;
+}
+.content-navigation-bar li a {
+  font-family: "SVN-Gilroy Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  color: #211E3B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-navigation-bar li:first-child a {
+  background-color: #C40000;
+  color: #FFFFFF;
+}
+.content-navigation-bar li:first-child a div {
+  width: 20px;
+  height: 100%;
+  display: flex;
+}
+.content-navigation-bar li:last-child a {
+  color: #FFFFFF;
+  background: #E5E5E5;
+}
+.content-navigation-bar li:last-child a div {
+  width: 20px;
+  height: 100%;
+  display: flex;
+}
+
+#footer {
+  background-color: #000;
+  height: 94px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+@media (max-width: 547px) {
+  #header {
+    max-width: 546px;
+    height: 69px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+  }
+  .container {
+    max-width: 497px;
+    margin: 0 auto;
+    display: block;
+    padding: 0 10px;
+  }
+  .container-left {
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .container-left-icon-menu {
+    display: block;
+    width: 26.25px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .container-left-icon-close {
+    width: 26.25px;
+    cursor: pointer;
+    z-index: 900;
+  }
+  .container-left-logo {
+    display: flex;
+    align-items: center;
+  }
+  .container-left-logo-logo-rt {
+    display: block;
+    width: 61px;
+    height: 61px;
+  }
+  .container-left-name-company {
+    font: 20px/29px "Noto Sans JP", normal;
+    font-weight: 700;
+    margin-right: 33px;
+  }
+  .container-left-input {
+    position: unset;
+  }
+  .container-left-input-btn-search {
+    position: absolute;
+  }
+  .container-left-input-search {
+    display: none;
+  }
+  .container-info {
+    display: none;
+    background-color: #D4D4D4;
+  }
+  .container-info li {
+    width: 100%;
+    display: block;
+    margin: 15px 0;
+  }
+  .container-info li:hover {
+    background-color: #A7A7A7;
+    cursor: pointer;
+  }
+  .container-info li:first-child {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  .container-info li:last-child {
+    width: 100%;
+    padding: 0 0 10px 0;
+  }
+  .container-info li:hover a {
+    color: #C40000;
+  }
+  .container-info-create {
+    margin-left: 0;
+  }
+  .banner {
+    height: 100vw;
+    background: url("./../image/banner_responsive.png") no-repeat center;
+    background-size: contain;
+    background-position-y: unset;
+  }
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+  .content-container {
+    padding: 0 20px;
+  }
+  .content-title {
+    max-width: 417px;
+    margin: 0 auto;
+    height: auto;
+  }
+  .content-title-content-box {
+    font-size: 30px !important;
+  }
+  .content-category_thumb {
+    height: auto !important;
+  }
+  .content-list {
+    justify-content: center;
+  }
+  .navigation-bar ul li {
+    margin-top: 17px;
+  }
+  #footer {
+    margin-top: 53px;
+  }
+}
+@media screen and (max-width: 980px) and (min-width: 547px) {
+  .container {
+    justify-content: space-around !important;
+  }
+  .container-info li {
+    display: none;
+  }
+  .container-info-myname {
+    display: inline-block !important;
+  }
+  .content-title {
+    justify-content: space-around !important;
+  }
+  .content-list {
+    justify-content: space-around !important;
+  }
+}
+@media screen and (max-width: 1270px) and (min-width: 980px) {
+  .container {
+    margin: 0 16px;
+  }
+  .content-title {
+    justify-content: space-around !important;
+  }
+  .content-list {
+    justify-content: space-around !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

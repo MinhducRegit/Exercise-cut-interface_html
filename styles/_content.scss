@@ -1,0 +1,225 @@
+.content {
+  width: 100%;
+  margin: 72px 0 18px 0;
+
+  &-container {
+  @include container;
+  }
+
+  &-title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 72px;
+  align-items: center;
+  padding: 15px 0;
+
+    &-content-box{
+      font: 50px 'Noto Sans JP',normal;
+      font-weight: 700;
+      color: $black;
+      height: 100%;
+      line-height: 63px;
+      }
+
+    &-select {
+      width: 144px;
+      height: 40px;
+      background: $white;
+      border: 1px solid #DEDEDE;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-form-select {
+      border: none !important;
+      outline: none;
+      width: 100%;
+      margin: 0 13px;
+      font-size: 17px;
+      line-height: 22px;
+      font-weight: 500;
+  
+    }
+  }
+  
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 18px;
+  }
+  &-blog {
+     width: 417px;
+    background: $white;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+     margin: 20px 0 50px 0;
+  }
+  &-category_thumb {
+    display: block;
+     width: 100%;
+    height: 276px;
+
+    & img {
+      max-width: 100%;
+      height: 100%;
+
+      &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+      }
+    }
+  }
+
+
+  &-content_category {
+      margin: 25px 10px 0 27.45px;
+    }
+
+  &-info {
+    font-family:'SVN-Gilroy' ;
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+
+      &-name,&-time {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #211E3B;
+      }
+  
+      &-icon {
+        width: 21px;
+        height: 21px;
+        margin-right: 5.5px;
+        color: #858383;
+      }
+  
+      &-name {
+        margin-right: 27.5px;
+      }
+
+      &-content {
+        margin-top: 15px;
+      }
+  
+      &-title-content {
+          font: 20px/28px 'SVN-Gilroy Bold';
+          font-style: normal;
+          font-weight: 700;
+          color: #211E3B;
+      }
+  
+      &-describe {
+        font-family: 'SVN-Gilroy';
+          margin: 10px 0 30px 0;
+          font-weight: 400;
+          line-height: 25px;
+          color: #211E3B;
+      }
+      
+      &-button {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      
+      &-read-more {
+        padding: 10px 46px 10px 15px;
+        left: 122px;
+        top: 1190px;
+        background: $white;
+        border: 1px solid #E4E4E4;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $color-content;
+    
+        &:hover {
+          cursor: pointer;
+          background-color: $color_content;
+          color: $white;
+        }
+      }
+
+      &-icon-arrow {
+        width: 20px;
+        height: 8px;
+        border: -2px solid;
+        position: absolute;
+        right: 5%;
+        top: 36%;
+        bottom: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  
+  &-navigation-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    &-three {
+      background-color: #FFE4E4;
+      color: $color_content;
+    }
+
+    & li:first-child, & li:last-child {
+      width: 40px;
+      height: 40px;
+    }
+    
+      & li {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: #211E3B;
+        position: relative;
+  
+        &:hover a {
+          background-color: #FFE4E4 !important;
+          color: $color_content !important;
+        }
+
+        & a{
+          @include navigation-bar();
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        
+        }
+    
+        &:first-child a {
+          background-color: $color_content;
+          color: $white;
+
+          & div {
+            width: 20px;
+            height: 100%;
+            display: flex;
+          }
+        }
+    
+        &:last-child a {
+          color: $white;
+          background: #E5E5E5;
+          
+          & div {
+            width: 20px;
+            height: 100%;
+            display: flex;
+          }
+        }
+      } 
+     
+  }
+}

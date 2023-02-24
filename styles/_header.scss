@@ -1,0 +1,153 @@
+#wraper {
+  width: 100%;
+  
+}
+
+.coating {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+.open {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+#header {
+  width: 100%;
+  height: 122px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  transition: 0.4s;
+  z-index: 10;
+
+}
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include container;
+    padding:0 15px;
+
+    &-left {
+      display: flex;
+      align-items: center;
+
+      &-icon-menu {
+        display: none;
+      }
+
+      &-icon-close {
+        display: none;
+      }
+
+      &-logo {
+        display: flex;
+        align-items: center;
+
+        &-logo-rt {
+          display: block;
+          width: 61px;
+          height: 61px;
+    
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        &-name-company {
+          font: 20px/29px 'Noto Sans JP',normal  ;
+          font-weight: 700;
+          margin-right: 33px;
+        }
+      } 
+
+      &-input {
+        position: relative;
+
+        &-search {
+          width: 374px;
+          height: 45px;
+          left: 286px;
+          top: 38px;
+          background: $white;
+          border: 1px solid $color_border;
+          border-radius: 4px;
+          text-indent: 20px;
+          cursor: pointer;
+        }
+
+        &-btn-search {
+          width: 19px;
+          height: 19px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          bottom: 50%;
+          transform: translate(-50%,-50%);
+          color: #A7A7A7;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &-info {
+      display: flex;
+      align-items: center;
+
+      &-myname {
+        color: $color_header;
+
+        &-user {
+          display: flex;
+          align-items: center;
+
+          &-icon-user {
+            // padding: auto;
+            width: 30.67px;
+            height: 30.67px;
+            margin-left: 15px;
+            mix-blend-mode: color-burn;
+          }
+        }
+      }
+
+      &-create {
+        margin: 0 106px 0 27px;
+        color: $color_header !important;
+      }
+
+      & li {
+        display: inline-block;
+
+        & a {
+            font: 15px/22px 'Noto Sans JP',normal  ;
+            font-weight: 500;
+            color: $white; 
+            display: block;
+            line-height: 27px;  
+        } 
+
+        &:first-child {
+          width: 51px;
+          height: 31px;
+          line-height: 31px;
+          text-align: center;
+          background: #770303;
+          border-radius: 3px;
+        
+        }
+      }
+
+    }
+  }
+    
