@@ -371,10 +371,7 @@ ul {
 .content-navigation-bar li:first-child a div {
   width: 20px;
   height: 100%;
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
+  display: flex;
 }
 .content-navigation-bar li:last-child a {
   color: #FFFFFF;
@@ -383,10 +380,7 @@ ul {
 .content-navigation-bar li:last-child a div {
   width: 20px;
   height: 100%;
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
+  display: flex;
 }
 
 #footer {
